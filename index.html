@@ -6,144 +6,59 @@
 
 <title> Some bestie moments are LOL-worthy 😂 </title>
 
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0f0f0f;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    color: #fff;
-}
-
-/* Container */
-.page {
-    width: 100%;
-    max-width: 420px;
-    padding: env(safe-area-inset-top) 10px env(safe-area-inset-bottom);
-}
-
-/* Judul */
-.video-title {
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px 0 12px;
-}
-
-/* Ads atas */
-.ad-top {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-/* Video wrapper */
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    height: 72vh;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,.6);
-    background: #000;
-}
-
-/* Gradient overlay */
-.video-wrapper::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,.18),
-        rgba(0,0,0,0),
-        rgba(0,0,0,.28)
-    );
-    pointer-events: none;
-}
-
-/* Video */
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Block fullscreen */
-video::-webkit-media-controls-fullscreen-button {
-    display: none !important;
-}
-
-/* Ads bawah */
-.bottom-ad {
-    margin: 14px auto 0;
-    text-align: center;
-}
-
-.bottom-ad img {
-    width: 100%;
-    max-width: 320px;
-    border-radius: 8px;
-}
-
-/* Desktop tweak */
-@media (min-width: 768px) {
-    .video-wrapper {
-        height: 560px;
-    }
-}
-</style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            position: sticky;
+            z-index: 10;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding-top: 71.43% /* 7:5 */
+        }
+        .video-container video,
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="page">
-    <div class="ad-top">
-        <script>
-          atOptions = {
-            'key' : 'a56d9957870f34de53762968bb2255c5',
-            'format' : 'iframe',
-            'height' : 50,
-            'width' : 320,
-            'params' : {}
-          };
+    <header>
+        <script type="text/javascript">
+            atOptions = {
+                'key' : 'e3390cf0a8cdf953ded85bdaaf3046a5',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+            };
         </script>
-        <script src="https://braceslinear.com/a56d9957870f34de53762968bb2255c5/invoke.js"></script>     
-    </div>
-    <div class="video-wrapper">
-        <video autoplay muted loop playsinline
-            controls
-            controlsList="nodownload noremoteplayback nofullscreen"
-            disablePictureInPicture
-            preload="metadata"
-            onloadedmetadata="this.controls=false">
+        <script type="text/javascript" src="//www.highperformanceformat.com/e3390cf0a8cdf953ded85bdaaf3046a5/invoke.js"></script>
+    </header>
+
+    <div class="video-container">
+        <video controls autoplay playsinline controlslist="nofullscreen nodownload noremoteplayback" disablepictureinpicture preload="metadata">
             <source src="https://cdn.videy.co/uZAcE9iU1.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="bottom-ad">
-        <div style="font-size:13px;opacity:.85;margin-bottom:6px">
-            🔥 Recommended for you
-        </div>
-        <script async="async" data-cfasync="false" src="https://braceslinear.com/d3e082d534e1581e0f78d3cfe456f0d9/invoke.js"></script>
-        <div id="container-d3e082d534e1581e0f78d3cfe456f0d9"></div>
-    </div>
-</div>
-<script>
-const video = document.querySelector("video");
-video.addEventListener("click", () => {
-    video.muted = !video.muted;
-    video.controls = true;
-});
-</script>
 
-    <!-- Histats.com  START  (aync)-->
+	<!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4992245,4,511,95,18,00000000']);
 _Hasync.push(['Histats.fasi', '1']);
@@ -158,3 +73,9 @@ hs.src = ('//s10.histats.com/js15_as.js');
 
 </body>
 </html>
+
+<head>
+<!-- JuicyAds PopUnders v3 Start -->
+<script type="text/javascript" src="https://js.juicyads.com/jp.php?c=44640333v2a4u4r2p28403a4a4&u=https%3A%2F%2Fwww.juicyads.rocks"></script>
+<!-- JuicyAds PopUnders v3 End -->
+<head>
